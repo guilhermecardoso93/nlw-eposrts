@@ -1,5 +1,5 @@
 {
-  "name": "mobile",
+  "name": "mobile2.0",
   "version": "1.0.0",
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "expo": "~46.0.9",
+    "expo-cli": "^6.0.5",
     "expo-status-bar": "~1.4.0",
     "react": "18.0.0",
     "react-dom": "18.0.0",
@@ -18,7 +19,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
-    "@types/react": "~18.0.14",
+    "@types/react": "~18.0.0",
     "@types/react-native": "~0.69.1",
     "typescript": "~4.3.5"
   },

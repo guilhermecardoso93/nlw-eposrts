@@ -1,7 +1,6 @@
 import "./styles/main.css";
 import Logo from "../src/assets/logo.svg";
 import Game1 from "../src/assets/game1.png";
-import { MagnifyingGlassPlus } from "phosphor-react";
 
 export function App() {
   return (
@@ -87,7 +86,7 @@ export function App() {
         </a>
       </div>
       <div className="bg-nlw pt-1 rounded-lg self-stretch  mt-8 over-flow-hidden">
-        <div className="bg-[#2a2634] px-8 py-6 flex justify-between items-center">
+        <div className="bg-[#2a2634] px-8 py-6  rounded-lg">
           <div>
             <strong className="text-2xl text-white font-black block">
               Não encontrou seu duo?
@@ -97,9 +96,8 @@ export function App() {
             </span>
           </div>
           <div>
-            <button className="py-3 px-4 bg-violet-500 hover:bg-violet-600 text-white rounded flex items-center gap-3">
-              <MagnifyingGlassPlus size="24" />
-              Publicar Anúncio
+            <button>
+              
             </button>
           </div>
         </div>

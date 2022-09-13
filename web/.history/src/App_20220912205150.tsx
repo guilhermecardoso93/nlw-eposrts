@@ -98,8 +98,8 @@ export function App() {
           </div>
           <div>
             <button className="py-3 px-4 bg-violet-500 hover:bg-violet-600 text-white rounded flex items-center gap-3">
-              <MagnifyingGlassPlus size="24" />
               Publicar Anúncio
+              <MagnifyingGlassPlus size='24'/>
             </button>
           </div>
         </div>

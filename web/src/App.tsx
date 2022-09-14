@@ -37,7 +37,11 @@ export function App() {
             </span>
           </div>
         </a>
+<<<<<<< HEAD
         <a href="" className="relative rounded-8 over-flow-hidden">
+=======
+        <a href="" className="relative rounded-8 over-floe-hidden">
+>>>>>>> 27b83b313fba72be8bce1956b3e70fc498411f59
           <img src={Game1} />
           <div className="w-full pt-16 pb-4 px-4 bg-game-grad absolute bottom-0 left-0 right-0">
             <strong className="font-bold text-white block">

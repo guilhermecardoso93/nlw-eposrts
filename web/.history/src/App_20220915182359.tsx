@@ -67,13 +67,12 @@ export function App() {
                   placeholder="Selecione o Game que deseja jogar"
                 />
               </div>
-
               <div className="flex flex-col gap-2">
                 <label htmlFor="name">Qual seu nome (ou nick) ?</label>
                 <Input id="name" placeholder="Como te chamam dentro do jogo?" />
               </div>
-              <div className="grid grid-cols-2 gap-6">
-                <div className="flex flex-col gap-2">
+              <div>
+                <div>
                   <label htmlFor="yearsPlaying">Joga há quanto tempo?</label>
                   <Input
                     id="yearsPlaying"
@@ -81,85 +80,37 @@ export function App() {
                     placeholder="Tudo bem ser Zero."
                   />
                 </div>
-                <div className="flex flex-col gap-2">
+                <div>
                   <label htmlFor="discord">Qual é o seu Discord?</label>
-                  <Input id="discord" type="text" placeholder="Usuario#0000." />
+                  <Input
+                    id="discord"
+                    type="text"
+                    placeholder="Tudo bem ser Zero."
+                  />
                 </div>
               </div>
 
-              <div className="flex gap-6">
-                <div className="flex flex-col gap-2">
+              <div>
+                <div>
                   <label htmlFor="weekDays">Quando costuma jogar?</label>
-                  <div className="grid grid-cols-4 gap-1">
-                    <button
-                      className="w-8 h-8 rounded bg-zinc-900"
-                      title="Domingo"
-                    >
-                      D
-                    </button>
-                    <button
-                      className="w-8 h-8 rounded bg-zinc-900"
-                      title="Segunda-feira"
-                    >
-                      S
-                    </button>
-                    <button
-                      className="w-8 h-8 rounded bg-zinc-900"
-                      title="Terça-feira"
-                    >
-                      T
-                    </button>
-                    <button
-                      className="w-8 h-8 rounded bg-zinc-900"
-                      title="Quarta-feira"
-                    >
-                      Q
-                    </button>
-                    <button
-                      className="w-8 h-8 rounded bg-zinc-900"
-                      title="Quinta-feira"
-                    >
-                      Q
-                    </button>
-                    <button
-                      className="w-8 h-8 rounded bg-zinc-900"
-                      title="Sexta-feira"
-                    >
-                      S
-                    </button>
-                    <button
-                      className="w-8 h-8 rounded bg-zinc-900"
-                      title="Sábado"
-                    >
-                      S
-                    </button>
-                  </div>
                 </div>
-                <div className="flex flex-col gap-2 flex-1">
+                <div>
                   <label htmlFor="hourStart">Qual horário do dia?</label>
-                  <div className="grid grid-cols-2 gap-2">
+                  <div>
                     <Input type="time" id="hourStart" placeholder="De" />
                     <Input type="time" id="hourEnd" placeholder="Até" />
                   </div>
                 </div>
               </div>
-              <div className="mt2 flex gap-2 text-sm">
+              <div>
                 <input type="checkbox" />
                 Costumo me conectar ao chat de voz.
               </div>
 
-              <footer className="mt-4 flex justify-end gap-4">
-                <Dialog.Close
-                  className="bg-zinc-500 px-5 h-12 rounded-md font-semibold  hover:bg-zinc-600"
-                  type="button"
-                >
-                  Cancelar
-                </Dialog.Close>
-                <button
-                  type="submit"
-                  className="bg-violet-500 px-5 h-12 rounded-md font-semibold flex items-center gap-3 hover:bg-violet-600"
-                >
-                  <GameController size={24} />
+              <footer>
+                <button>Cancelar</button>
+                <button type="submit">
+                  <GameController />
                   Encontrar um duo.
                 </button>
               </footer>

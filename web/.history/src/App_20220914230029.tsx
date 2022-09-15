@@ -4,6 +4,8 @@ import { GamerBanner } from "./components/GameBanner";
 import { CreateAdBanner } from "./components/CreateAdBanner";
 
 import Logo from "../src/assets/logo.svg";
+import Game1 from "../src/assets/game1.png";
+
 import "./styles/main.css";
 
 interface GameProps {
@@ -51,5 +53,3 @@ export function App() {
     </div>
   );
 }
-
-//LevelUp Journey UntilTheEnd

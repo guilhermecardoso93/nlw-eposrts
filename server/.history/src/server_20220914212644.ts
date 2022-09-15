@@ -1,5 +1,4 @@
 import express from "express";
-import cors from 'cors'
 import { PrismaClient } from "@prisma/client";
 import { convertHoursStringToMinutes } from "./utils/convert-hour-string-to-minute";
 import { convertMinutesStringToHours } from "./utils/convert-minutes-string-to-hours";
@@ -7,8 +6,6 @@ import { convertMinutesStringToHours } from "./utils/convert-minutes-string-to-h
 const app = express();
 
 app.use(express.json())
-
-app.use(cors())
 
 const prisma = new PrismaClient({
   log: ["query"],

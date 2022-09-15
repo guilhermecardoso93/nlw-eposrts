@@ -1,14 +1,10 @@
 import express from "express";
-import cors from 'cors'
 import { PrismaClient } from "@prisma/client";
 import { convertHoursStringToMinutes } from "./utils/convert-hour-string-to-minute";
-import { convertMinutesStringToHours } from "./utils/convert-minutes-string-to-hours";
 
 const app = express();
 
 app.use(express.json())
-
-app.use(cors())
 
 const prisma = new PrismaClient({
   log: ["query"],
@@ -46,7 +42,7 @@ app.post("/games/:id/ads", async (request, response) => {
     }
   })
 
-  return response.status(201).json(ad);
+  return response.status(201).json(body);
 });
 
 app.get("/games/:id/ads", async (request, response) => {
@@ -74,8 +70,6 @@ app.get("/games/:id/ads", async (request, response) => {
     return {
       ...ad,
       weekDays: ad.weekDays.split(","),
-      hourStart: convertMinutesStringToHours(ad.hourStart),
-      hourEnd: convertMinutesStringToHours(ad.hourEnd)
     };
   }));
 });

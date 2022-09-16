@@ -55,11 +55,11 @@ export function Game() {
           )}
           horizontal
           style={styles.containerList}
-          contentContainerStyle={[duos.length === 0 ? styles.contentList : styles.emptyList]}
+          contentContainerStyle={styles.contentList}
           showsHorizontalScrollIndicator={false}
           ListEmptyComponent={() => (
-            <Text style={styles.inputText}>
-              Não há anúncios para esse jogo.
+            <Text>
+              Não há Anúncios para esse jogo.
             </Text>
           )}
         />

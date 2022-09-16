@@ -43,8 +43,6 @@ export const styles = StyleSheet.create({
     fontSize: THEME.FONT_SIZE.SM,
   },
   emptyList :{
-    flex: 1, 
-    alignItems: 'center',
-    justifyContent: 'center',
+    flex: 1, alignItems: 'center'
   }
 });

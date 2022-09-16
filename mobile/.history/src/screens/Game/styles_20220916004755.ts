@@ -39,12 +39,6 @@ export const styles = StyleSheet.create({
   },
   inputText: {
     color: THEME.COLORS.CAPTION_300,
-    font: THEME.FONT_FAMILY.REGULAR,
-    fontSize: THEME.FONT_SIZE.SM,
-  },
-  emptyList :{
-    flex: 1, 
-    alignItems: 'center',
-    justifyContent: 'center',
+    font: THEME.FONT_FAMILY.REGULAR
   }
 });

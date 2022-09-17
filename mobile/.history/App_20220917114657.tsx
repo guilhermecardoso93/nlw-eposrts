@@ -35,19 +35,12 @@ export default function App() {
         console.log(response);
       });
 
-    return () => {
-      if (
-        getNotificationListener.current &&
-        responseNotificationListener.current
-      ) {
-        Notifications.removeNotificationSubscription(
-          getNotificationListener.current
-        );
-        Notifications.removeNotificationSubscription(
-          responseNotificationListener.current
-        );
+      return() => {
+        if(getNotificationListener.current && responseNotificationListener.current){
+          Notifications.removeNotificationSubscription(getNotificationListener.current);
+          Notifications.removeNotificationSubscription(responseNotificationListener.current);
+        }
       }
-    };
   });
 
   const [fontsLoaded] = useFonts({

@@ -36,11 +36,13 @@ export function DuoCard({ data, onConnect }: Props) {
           data.useVoiceChannel ? THEME.COLORS.SUCCESS : THEME.COLORS.ALERT
         }
       />
+      <GameController color={THEME.COLORS.TEXT} size={20} />
 
       <TouchableOpacity style={styles.button} onPress={onConnect}>
-        <GameController color={THEME.COLORS.TEXT} size={20} />
         <Text style={styles.buttonTitle}>Conectar</Text>
       </TouchableOpacity>
     </View>
   );
 }
+
+

@@ -31,7 +31,7 @@ export function Game() {
     useEffect(() => {
       fetch(`http://192.168.1.2:3333/games/${adsId}/discord`)
         .then((response) => response.json())
-        .then((data) => setDiscordDuoSelected(data.discord));
+        .then((data) => setDuos(data));
     }, []);
   }
 
@@ -75,7 +75,7 @@ export function Game() {
 
         <DuoMatch
           visible={discordDuoSelected.length > 0}
-          discord={discordDuoSelected}
+          discord="jgosjosfo"
           onClose={() => setDiscordDuoSelected("")}
         />
       </SafeAreaView>

@@ -1,5 +1,5 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add @types/phosphor-react-native
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js
 
 PATH: 
   C:\Python310\Scripts\;C:\Python310\;C:\Python39\Scripts\;C:\Python39\;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Samsung\SamsungLink\AllShare Framework DMS\bin\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\ProgramData\chocolatey\bin;C:\Program Files\Git LFS;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Users\guilh\scoop\shims;C:\Users\guilh\AppData\Local\Microsoft\WindowsApps;C:\Users\guilh\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\guilh\AppData\Local\GitHubDesktop\bin;C:\Users\guilh\.deno\bin;C:\Users\guilh\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\GitHub CLI\;C:\Users\guilh\AppData\Local\Yarn\bin;C:\Users\guilh\AppData\Local\Programs\Hyper\resources\bin;C:\Users\guilh\AppData\Roaming\npm
@@ -14,17 +14,16 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/@types%2fphosphor-react-native: Not found
-      at Request.params.callback [as _callback] (C:\Program Files (x86)\Yarn\lib\cli.js:66097:18)
-      at Request.self.callback (C:\Program Files (x86)\Yarn\lib\cli.js:140749:22)
-      at Request.emit (node:events:526:28)
-      at Request.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:141721:10)
-      at Request.emit (node:events:526:28)
-      at IncomingMessage.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:141643:12)
+  Error: https://registry.npmjs.org/phosphor-react-native/-/phosphor-react-native-1.1.2.tgz: ESOCKETTIMEDOUT
+      at ClientRequest.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:141376:19)
       at Object.onceWrapper (node:events:645:28)
-      at IncomingMessage.emit (node:events:538:35)
-      at endReadableNT (node:internal/streams/readable:1345:12)
-      at processTicksAndRejections (node:internal/process/task_queues:83:21)
+      at ClientRequest.emit (node:events:526:28)
+      at TLSSocket.emitRequestTimeout (node:_http_client:758:9)
+      at Object.onceWrapper (node:events:645:28)
+      at TLSSocket.emit (node:events:538:35)
+      at TLSSocket.Socket._onTimeout (node:net:501:8)
+      at listOnTimeout (node:internal/timers:559:17)
+      at processTimers (node:internal/timers:502:7)
 
 npm manifest: 
   {
@@ -39,24 +38,23 @@ npm manifest:
     },
     "dependencies": {
       "@expo-google-fonts/inter": "^0.2.2",
-      "@react-native-community/masked-view": "^0.1.11",
       "@react-navigation/native": "^6.0.12",
       "@react-navigation/native-stack": "^6.8.0",
       "expo": "~46.0.9",
+      "expo-clipboard": "~3.1.0",
       "expo-font": "~10.2.0",
       "expo-linear-gradient": "~11.4.0",
+      "expo-modules-core": "~0.11.5",
+      "expo-notifications": "~0.16.1",
       "expo-status-bar": "~1.4.0",
       "phosphor-react-native": "^1.1.2",
       "react": "18.0.0",
       "react-dom": "18.0.0",
       "react-native": "0.69.5",
-      "react-native-gesture-handler": "~2.5.0",
-      "react-native-reanimated": "~2.9.1",
       "react-native-safe-area-context": "4.3.1",
       "react-native-screens": "~3.15.0",
       "react-native-svg": "12.3.0",
-      "react-native-web": "~0.18.7",
-      "react-navigation": "^4.4.4"
+      "react-native-web": "~0.18.7"
     },
     "devDependencies": {
       "@babel/core": "^7.12.9",
